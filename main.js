@@ -1,5 +1,5 @@
 // CONSTANTES
-const musicLink = "./Junior H - Atrapado En Un Sueño [Official Video] (320 kbps).mp3";
+const musicLink = "./JuniorH-AtrapadoEnUnSueno.mp3";
 
 // NODOS 
 
@@ -21,7 +21,6 @@ buttonPlacing.innerText = "- " +  min + ":" + (sec < 10 ? "0" + sec : sec);
 
 });
 
-
 // FUNCIONES 
 let changeIcon = function(icon) {
     icon.classList.toggle('fa-heart-o')
@@ -41,19 +40,13 @@ const toggleMusic = () => {
 };
 
 
-
-
 const onTimeUpdated = () => {
         
     const rest = audioNode.duration - audioNode.currentTime;
     const min = Math.floor(rest / 60)
     const sec = Math.floor(rest % 60)
-    buttonPlacing.innerText = "- " +  min + ":" + (sec < 10 ? "0" + sec : sec);
-       
-    
+    buttonPlacing.innerText = "- " +  min + ":" + (sec < 10 ? "0" + sec : sec);    
 };
-
-
 
 
 
@@ -62,10 +55,5 @@ const onTimeUpdated = () => {
 buttonNode.onclick = toggleMusic; 
 
 audioNode.ontimeupdate = onTimeUpdated;
-
-
-
-
-// LIKE BUTTON
 
 
