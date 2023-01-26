@@ -165,3 +165,62 @@ a{
     cursor: pointer;
 }
 
+@media (min-width: 1920px){
+
+    html, body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+
+
+
+    }
+    .reproductor {
+        width: 620px;
+        height: 300px;
+        padding: 3rem;
+        gap: 22px;
+    
+    }
+    .reproductor img{
+        width: 300px;
+        height: 300px;
+    
+    }
+    
+    .elementos .spotify-icon{
+        font-size: 34px;
+    }
+    
+    .elementos .copy{
+        gap: 12px;
+    }
+    .elementos .copy .song-name{
+        font-size: 32px;    
+    }
+    
+    .elementos .copy .artist{
+        font-size: 18px;    
+    }    
+    .elementos .copy i{
+        font-size:20px;
+    }
+    
+    
+    .elementos .music-stats{
+        gap: 28px;
+        font-size: 24px;
+    }
+    
+    .elementos .music-stats > p{
+        font-size: 24px;
+    }
+    .elementos .music-stats .btnMusic{
+        height: 55px;
+        width: 55px;
+        font-size: 24px;
+    }
+
+
+}
