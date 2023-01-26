@@ -18,11 +18,9 @@
 .song-name-animation1{
     animation: song-name-animation1 10s linear;
     animation-iteration-count:infinite;
-
 }
 
 html, body{
-    background-color: white;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -36,9 +34,8 @@ a{
 }
 .reproductor {
     display: flex;
-    width: 420px;
-    height: 200px;
-    background-color: aqua;
+    width: 220px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -49,8 +46,8 @@ a{
 
 }
 .reproductor img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 9px;
     object-fit: cover;
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, .7);
@@ -62,7 +59,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 1px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
@@ -70,7 +67,7 @@ a{
 
 .elementos .spotify-icon{
     color: white;
-    font-size: 34px;
+    font-size: 14px;
     margin: 0;
     margin-bottom: auto;
     margin-left: auto;
@@ -86,13 +83,13 @@ a{
     flex-direction: column;
     height: 60%;
     justify-content: center;
-    gap: 10px;
+    gap: 1px;
     width: 100%;
-    padding-left: 16px;
+    padding-left: 0px;
 
 }
 .elementos .copy .song-name{
-    font-size: 22px;
+    font-size: 12px;
     font-weight: bold;
     margin: 0;
     width: 240%;
@@ -112,7 +109,7 @@ a{
 }
 
 .elementos .copy .artist{
-    font-size: 12px;
+    font-size: 8px;
     font-weight: lighter;
     margin: 0;
     color: hsl(0, 0%, 70%);
@@ -126,20 +123,21 @@ a{
 
 .elementos .copy i{
     margin: 0;
-    font-size:20px;
+    font-size:10px;
     color: hsl(0, 0%, 70%);
     padding-top: 8px;
     transition: all .3s;
     cursor: pointer;
     width: 20px;
-    
 }
+
 
 .elementos .music-stats{
     display: flex;
     margin-left: auto;
-    gap: 15px;
+    gap: 8px;
     align-items: flex-end;
+    font-size: 8px;
 }
 
 .elementos .music-stats > p{
@@ -147,18 +145,18 @@ a{
     letter-spacing: 2px;
     margin: 0;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 8px;
 }
 .elementos .music-stats .btnMusic{
     border-radius: 50%;
-    padding: 10px;
+    padding: 8px;
     border: none;
-    height: 35px;
-    width: 35px;
+    height: 15px;
+    width: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 8px;
     transition: all .3s;
 }
 

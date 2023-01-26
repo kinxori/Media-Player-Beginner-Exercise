@@ -1,5 +1,5 @@
 // CONSTANTES
-const musicLink = "./JuniorH-AtrapadoEnUnSueno.mp3";
+const musicLink = "./El_corrido_del_defensor.mp3";
 
 // NODOS 
 
@@ -21,12 +21,18 @@ buttonPlacing.innerText = "- " +  min + ":" + (sec < 10 ? "0" + sec : sec);
 
 });
 
-// FUNCIONES 
+// FUNCIONES  // Heart Icon animation for onClick event
+
 let changeIcon = function(icon) {
     icon.classList.toggle('fa-heart-o')
+    icon.style.transition = "transform 0.2s";
+    icon.style.transform = "scale(0.8)";
+    setTimeout(function(){
+        icon.style.transform = "scale(1)";
+      }, 100);
+
 }
 
-console.log(changeIcon)
 
 const toggleMusic = () => {
     if(audioNode.paused){
@@ -55,5 +61,7 @@ const onTimeUpdated = () => {
 buttonNode.onclick = toggleMusic; 
 
 audioNode.ontimeupdate = onTimeUpdated;
+
+
 
 
