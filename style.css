@@ -165,16 +165,70 @@ a{
     cursor: pointer;
 }
 
-@media (min-width: 1920px){
+@media (min-width: 498px){
 
     html, body{
         display:flex;
         justify-content: center;
         align-items: center;
         height: 40%;
+    }
+    .reproductor {
+        width: 360px;
+        height: 200px;
+        padding: 2rem;
+        gap: 22px;
+    
+    }
+    .reproductor img{
+        width: 200px;
+        height: 200px;
+    
+    }
+    
+    .elementos .spotify-icon{
+        font-size: 24px;
+    }
+    
+    .elementos .copy{
+        gap: 8px;
+    }
+    .elementos .copy .song-name{
+        font-size: 22px;    
+    }
+    
+    .elementos .copy .artist{
+        font-size: 12px;    
+    }    
+    .elementos .copy i{
+        font-size: 12px;
+    }
+    
+    
+    .elementos .music-stats{
+        gap: 28px;
+        font-size: 12px;
+    }
+    
+    .elementos .music-stats > p{
+        font-size: 12px;
+    }
+    .elementos .music-stats .btnMusic{
+        height: 25px;
+        width: 25px;
+        font-size: 12px;
+    }
 
 
+}
 
+@media (min-width: 780px){
+
+    html, body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
     }
     .reproductor {
         width: 620px;
